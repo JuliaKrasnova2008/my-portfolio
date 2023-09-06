@@ -1,0 +1,113 @@
+.curriculum-vitae {
+    margin: 0;
+    padding: 0;
+    padding-top: 182px;
+    padding-bottom: 248px;
+    background-color: #171718;
+    display: flex;
+    color: var(--color-header);
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 5px;
+}
+.curriculum-vitae__img {
+    position: absolute;
+    top: 34px;
+    z-index: 1;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(edeg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotation {
+    animation-name: rotation;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.curriculum-vitae__title {
+    margin: 0;
+    padding: 0;
+    color: var(--color-header);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 84px */
+    letter-spacing: -0.5px;
+}
+.curriculum-vitae__title_name {
+    color: #ffea00;
+}
+.curriculum-vitae__education {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    color: var(--color-header);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: -0.5px;
+}
+.curriculum-vitae__subtitle {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    color: var(--color-header);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.5px;
+}
+.curriculum-vitae__link {
+    margin: 0;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #5c62ec;
+    color: var(--color-header);
+    text-align: center;
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.15px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 2;
+}
+.curriculum-vitae__link:hover {
+    opacity: 0.9;
+    transform: scale(1.07);
+}
+@media screen and (max-width: 768px) {
+    .curriculum-vitae {
+        padding-top: 80px;
+        padding-bottom: 140px;
+    }
+    .curriculum-vitae__title {
+        font-size: 41px;
+        margin-bottom: 20px;
+    }
+    .curriculum-vitae__education {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+    .curriculum-vitae__subtitle {
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,10 @@
+.contacts-review {
+    margin: 0;
+    padding: 70px;
+    padding-bottom: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: var(--background);
+    height: 100%;
+}
